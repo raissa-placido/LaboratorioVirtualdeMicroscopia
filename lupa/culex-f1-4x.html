@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab. Microscopia Virtual</title>
+    <style type="text/css">
+        :root {
+            --img: url(./imagens/Culex-Female-mouthparts-4x.jpg);
+            --imgWidth: 500px;
+            --imgHeight: 500px;
+            --imgBorder: 10px;
+            --glassRadius: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="centralizar-elementos">
+        <div class="elementos-esquerda">
+            <div class="legenda-imagem">
+                Lâmina: Culex female (mouthparts) W.M <br>
+                Foco: 4x.
+            </div>
+            <div id="range">
+                <input type="range" min="1" max="5" step="0.1" value="1">
+            </div>
+            <div class="menu">
+                <a href="../index-mv.html"><button class="button-86" id="button-home"></button></a>
+            </div>
+         </div>
+            <div id="image">
+
+                <div id="glass" style="--x:300px; --y:300px; --m:1;"></div>
+                <div id="eventLayer"></div>
+            </div>
+        </div>
+
+        <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

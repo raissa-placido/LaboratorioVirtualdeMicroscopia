@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+#centralizar-elementos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+.elementos-esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 200px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+:root {
+  --minWidth: 450px;
+  /* Tamanho mínimo de largura */
+  --minHeight: 450px;
+  /* Tamanho mínimo de altura */
+  --maxWidth: 200px;
+  /* Tamanho máximo de largura */
+  --maxHeight: 200px;
+  /* Tamanho máximo de altura */
+}
+
+#image {
+  position: relative;
+  width: var(--imgWidth);
+  height: var(--imgHeight);
+  border: var(--imgBorder) solid #fff 1px;
+  /*box-shadow: 0px 0px 8px 8px #fff;*/
+  background-image: var(--img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 500px;
+  /* Torna a borda circular */
+  max-width: var(--maxWidth);
+  min-width: var(--minWidth);
+  max-height: var(--maxHeight);
+  min-height: var(--minHeight);
+
+}
+
+
+#range {
+  position: absolute;
+  padding: 5px 5px;
+  border: var(--imgBorder) solid #fff;
+  background-color: #fff;
+  left: calc(var(--imgBorder) * -1);
+  transform: translateY(-100%);
+  border-radius: 10px 10px 10px 10px;
+  user-select: none;
+  transform: translateX(-50%);
+  margin-left: 340px;
+  margin-top: 100px ;
+  
+}
+
+
+
+#range input {
+  cursor: pointer;
+  color: aquamarine
+}
+
+#glass {
+
+  width: 150px;
+  /* Ajuste o tamanho da largura conforme necessário */
+  height: 150px;
+  /* Ajuste o tamanho da altura conforme necessário */
+  border-radius: 100px;
+  /* Ajuste o raio da borda para torná-la circular */
+  border: 1px solid #fff;
+
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+  background-image: var(--img);
+  background-repeat: no-repeat;
+  background-size: calc(var(--imgWidth)* var(--m)) calc(var(--imgHeight) * var(--m));
+  background-position: calc(var(--glassRadius) - var(--x) * var(--m)) calc(var(--glassRadius) - var(--y) * var(--m));
+  display: none;
+  /* Começa oculta */
+
+}
+
+
+
+
+#eventLayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: none;
+
+
+}
+
+#eventLayer:active {
+  cursor: pointer;
+
+}
+
+.legenda-imagem {
+  background-color: #fff;
+  /* Cor de fundo da div */
+  color: #212026;
+  /* Cor do texto */
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 300px;
+
+}
+
+/*botoes*/
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  bottom: 30px;
+  width: 100%;
+
+}
+
+#button-10x {
+  position: absolute;
+  border-radius: 100%;
+  border:  solid #fff 2px;
+  
+ 
+}
+
+#button-home {
+  position: absolute;
+  background-image: url('./imagens/home-icone.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center; /* Centraliza a imagem horizontal e verticalmente */
+  border-radius: 100%;
+  padding: 20px;
+  border:  solid #fff 2px;
+ 
+}
+
+#button-40x {
+  position: absolute;
+  border-radius: 100%;
+  border:  solid #fff 2px;
+
+}
+
+
+.button-86 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  padding: 10px ;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  width: 60px; /* Defina o tamanho desejado para o círculo */
+  height: 60px; /* Mantenha o mesmo valor que a largura para criar um círculo */
+}
+
+/* Estilo quando o botão é hover (passar o mouse por cima) */
+.button-86:hover {
+  background-color: #c1c1c1;
+  /* Cor de fundo alterada */
+}
+
+/* Estilo para o link dentro do botão */
+.button-86 a {
+
+  text-decoration: none;
+  /* Remova a decoração de texto do link */
+}
+
+
+/*fim dos botoes*/
