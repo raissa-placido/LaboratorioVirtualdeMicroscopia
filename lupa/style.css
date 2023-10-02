@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
 
-  
+
 }
 
 .elementos-esquerda {
@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 :root {
@@ -37,7 +37,14 @@ body {
   /* Tamanho máximo de largura */
   --maxHeight: 200px;
   /* Tamanho máximo de altura */
+
+
+  --imgWidth: 500px;
+  --imgHeight: 500px;
+  --imgBorder: 10px;
+  --glassRadius: 60px;
 }
+
 
 #image {
   position: relative;
@@ -69,8 +76,8 @@ body {
   user-select: none;
   transform: translateX(-50%);
   margin-left: 340px;
-  margin-top: 100px ;
-  
+  margin-top: 100px;
+
 }
 
 
@@ -153,9 +160,9 @@ body {
 #button-10x {
   position: absolute;
   border-radius: 100%;
-  border:  solid #fff 2px;
-  
- 
+  border: solid #fff 2px;
+
+
 }
 
 #button-home {
@@ -163,35 +170,38 @@ body {
   background-image: url('./imagens/home-icone.png');
   background-size: 30px 30px;
   background-repeat: no-repeat;
-  background-position: center; /* Centraliza a imagem horizontal e verticalmente */
+  background-position: center;
+  /* Centraliza a imagem horizontal e verticalmente */
   border-radius: 100%;
   padding: 20px;
-  border:  solid #fff 2px;
- 
+  border: solid #fff 2px;
+
 }
 
 #button-40x {
   position: absolute;
   border-radius: 100%;
-  border:  solid #fff 2px;
+  border: solid #fff 2px;
 
 }
 
 
 .button-86 {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 25px;
   background-color: #ffffff;
   color: #000;
   border: none;
-  padding: 10px ;
+  padding: 10px;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  width: 60px; /* Defina o tamanho desejado para o círculo */
-  height: 60px; /* Mantenha o mesmo valor que a largura para criar um círculo */
+  width: 60px;
+  /* Defina o tamanho desejado para o círculo */
+  height: 60px;
+  /* Mantenha o mesmo valor que a largura para criar um círculo */
 }
 
 /* Estilo quando o botão é hover (passar o mouse por cima) */

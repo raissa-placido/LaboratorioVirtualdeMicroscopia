@@ -1,3 +1,40 @@
+/*sumariio*/
+
+
+
+.sumario {
+  /*background-color: #ffcc80;  Laranja claro */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+  border: 1px solid #b32a04; /* Laranja escuro */
+  padding: 10px;
+  text-align: center;
+  color:#fff;
+  font-size:22px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+
+tr {
+  background-color: #ff6f00; /* Laranja médio */
+
+}
+/*fim*/
+
+h3{
+  font-style: italic;
+  /*text-transform:uppercase;*/
+}
 .top-menu {
   width: 100%;
   position: fixed;
