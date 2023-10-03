@@ -73,7 +73,7 @@ h3{
   margin-top: 0;
   position: fixed;
   color: #000000;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   z-index: 6;
   
@@ -107,11 +107,12 @@ h3{
 
 .side-bar .menu .item a{
   color: #000000;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   display: block;
-  padding: 5px 30px;
+  padding: 1px 5px;
   line-height: 60px;
+  
 }
 
 .side-bar .menu .item a:hover{
@@ -133,7 +134,7 @@ h3{
 }
 
 .side-bar .menu .item .sub-menu{
-  background: rgba(255,255,255 , 0.1);
+  background: rgba(219, 94, 94, 0.1);
   display:none;
 }
 
