@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 200px;
+  margin-right: 40px;
 }
 
 body {
@@ -29,9 +29,9 @@ body {
 }
 
 :root {
-  --minWidth: 450px;
+  --minWidth: 500px;
   /* Tamanho mínimo de largura */
-  --minHeight: 450px;
+  --minHeight: 500px;
   /* Tamanho mínimo de altura */
   --maxWidth: 200px;
   /* Tamanho máximo de largura */
@@ -56,6 +56,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 500px;
+  margin-right: 20px;
   /* Torna a borda circular */
   max-width: var(--maxWidth);
   min-width: var(--minWidth);
@@ -75,8 +76,8 @@ body {
   border-radius: 10px 10px 10px 10px;
   user-select: none;
   transform: translateX(-50%);
-  margin-left: 340px;
-  margin-top: 100px;
+  margin-left: 15%;
+  margin-top: 140px;
 
 }
 
@@ -134,26 +135,48 @@ body {
   /* Cor de fundo da div */
   color: #212026;
   /* Cor do texto */
-  padding: 20px;
   border-radius: 10px 10px 10px 10px;
-  font-size: 18px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-family:'Courier New', Courier, monospace;
   font-weight: bold;
-  padding: 20px;
+  padding: 3%;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-bottom: 300px;
 
+ margin-right: 40px;
+  width: 250px;
+  height: 70px;
+
+}
+
+.texto-ajuda{
+  background-color: #fff;
+  font-size: 15px;
+  border-radius: 10px 10px 10px 10px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 1%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 22%;
+  width: 230px;
+  height: 90px;
+  margin-left: 40px;
+  
+  text-align: justify;
 }
 
 /*botoes*/
 
 .menu {
-  display: flex;
-  justify-content: space-between;
+  display:flex;
+  justify-content:space-between;
   bottom: 30px;
-  width: 100%;
+  width: 190px;
+  margin-left: 1%;
+  margin-top: 300px;
 
 }
 
@@ -167,8 +190,8 @@ body {
 
 #button-home {
   position: absolute;
-  background-image: url('./imagens/home-icone.png');
-  background-size: 30px 30px;
+  background-image: url('./imagens/seta.png');
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
   /* Centraliza a imagem horizontal e verticalmente */
@@ -187,20 +210,21 @@ body {
 
 
 .button-86 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 25px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 18px;
   background-color: #ffffff;
   color: #000;
   border: none;
+  font-weight: bold;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  width: 60px;
+  width: 50px;
   /* Defina o tamanho desejado para o círculo */
-  height: 60px;
+  height: 50px;
   /* Mantenha o mesmo valor que a largura para criar um círculo */
 }
 
