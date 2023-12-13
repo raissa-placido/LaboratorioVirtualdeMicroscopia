@@ -1,4 +1,122 @@
-/*sumariio*/
+* {
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/* MODO NOTURNO */
+.dark {
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark header{
+  background-color: #171e21;
+  color: #fff;
+}
+
+.dark main{
+  background-color: #263238;
+}
+
+.dark .about-subtitle{
+  color: #eca2a2;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .menu-btn {
+  color: #fff;
+}
+
+.dark .close-btn{
+  color: #fff;
+}
+
+.dark .side-bar{
+  background-color: #5f5f5f;
+}
+
+.dark .side-bar .menu .item a:hover{
+  background-color: #353535;
+}
+
+.dark .side-bar .menu .item a{
+  color: #fff;
+}
+
+.dark footer{
+  background-color: #171e21;
+}
+
+.bi {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.bi-moon {
+  display: none;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #810303;
+  box-shadow: 0.5px 0.5px 10px 0.5px #000;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  z-index: 7;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/*SOBRE A FONTE (A+ E A-)*/
+.titulo-header{
+  font-size: 20px;
+}
+
+#btnAumentar{
+  color: #fff;
+  font-size: 30px;
+
+}
+
+#btnDiminuir{
+  color: #fff;
+}
 
 
 /*REFERÊNCIAS*/
@@ -107,34 +225,13 @@ h3{
   z-index: 7; /* Garanta que o ícone fique acima do menu */
 }
 
-.top-menu .side-bar {
-  width: 290px; /* Largura do menu lateral */
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: -100%; /* O menu inicialmente começa escondido */
-  overflow-y: auto;
-  transition: 0.6s ease;
-  transition-property: left;
-  z-index: 6;
-  background-color: #fff;
-}
-.menu-btn {
-  margin-top: 0;
-  position: fixed;
-  color: #000000;
-  font-size: 25px;
-  cursor: pointer;
-  z-index: 6;
-  
-}
-.side-bar {
-  background: rgba(252, 252, 252, 0.1);
-  backdrop-filter: blur(15px);
+.side-bar{
+  background: #fff;
+  backdrop-filter:blur(15px);
   width: 290px;
   height: 100vh;
   position: fixed;
-  top: 0; /* Define a posição superior como 0 para o menu ficar no topo */
+  top:0;
   left: -100%;
   overflow-y: auto;
   transition: 0.6s ease;
@@ -147,6 +244,7 @@ h3{
 }
 
 .side-bar .menu{
+  width: 100%;
   margin-top: 80px;
 }
 
@@ -157,17 +255,15 @@ h3{
 
 .side-bar .menu .item a{
   color: #000000;
-  font-size: 15px;
+  font-size: 16px;
   text-decoration: none;
   display: block;
-  padding: 1px 5px;
+  padding: 5px 30px;
   line-height: 60px;
-  margin-left: 6%;
-  
 }
 
 .side-bar .menu .item a:hover{
-  background:darkgray;
+  background: #eebaba;
   transition: 0.3s ease;
 
 }
@@ -185,7 +281,7 @@ h3{
 }
 
 .side-bar .menu .item .sub-menu{
-  background: rgba(219, 94, 94, 0.1);
+  background: #fff;
   display:none;
 }
 
@@ -208,13 +304,63 @@ h3{
 
 
 .menu-btn{
-  margin-top: 0;
-  position: fixed;
-  color: #000000;
+  color: #ffffff;
   font-size: 20px;
-  cursor:pointer;
+  margin: 0px;
+  cursor: pointer;
   z-index: 6;
 }
+
+/* MODO NOTURNO */
+.dark {
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark header{
+  background-color: #171e21;
+  color: #fff;
+}
+
+
+.dark main{
+  background-color: #263238;
+}
+
+.dark .about-subtitle{
+  color: #eca2a2;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .menu-btn {
+  color: #fff;
+}
+
+.dark .close-btn{
+  color: #fff;
+}
+
+.dark .side-bar{
+  background-color: #5f5f5f;
+}
+
+.dark .side-bar .menu .item a:hover{
+  background-color: #353535;
+}
+
+.dark .side-bar .menu .item a{
+  color: #fff;
+}
+
+
 :root {
 
   /**
@@ -1030,6 +1176,14 @@ h3 {
 /*-----------------------------------*\
     #FOOTER
   \*-----------------------------------*/
+ 
+footer {
+  background-color: #a72c0a;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  
+}
 
 .footer-top {
   display: grid;
@@ -1058,7 +1212,7 @@ h3 {
 
 .footer-list-item {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 10px;
   margin-block-start: 15px;
 }
@@ -1069,14 +1223,15 @@ h3 {
 
 .footer-bottom {
   padding-block: 35px;
-  text-align: left;
-  margin-left: 100px;
-  border-block-start: 1px solid var(--cultured_20);
+ /* text-align: center;
+  border-block-start: 1px solid var(--cultured_20);*/
 }
 
 
-
-
+.logo {
+  display: block;
+  margin: 0 auto;
+}
 
 /*-----------------------------------*\
     #BACK TO TOP

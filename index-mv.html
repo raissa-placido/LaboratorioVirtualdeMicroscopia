@@ -5,16 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab. Microscopia Virtual</title>
+  <title>Lab. Virtual de Microscopia</title>
+  <!-- Logo do site/favicon -->
+  <link rel="icon" type="image/png" href="./imagens/logotcc.png">
+
   <link rel="stylesheet" href="style-mv.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+
 </head>
-<header class="top-menu">
-  <nav>
+<header class="cabecalho">
+  <div>
     <div class="menu-btn">
       <i class="fas fa-bars"></i>
     </div>
@@ -22,15 +31,37 @@
       <div class="close-btn">
         <i class="fas fa-times"></i>
       </div>
+  
+
       <div class="menu">
         <div class="item"><a href="https://raispl.github.io/HomepagePrincipal/"><i class="fas fa-info-circle"></i>Início</a></div>
         <div class="item"><a href=" https://raispl.github.io/homepageDoencas/"><i class="fas fa-microscope"></i>Informativo sobre Doenças</a></div>
         <div class="item"><a href="https://raispl.github.io/HomepageGraficos/"><i class="fas fa-chart-line"></i>Dados Epidemiológicos</a></div>
       </div>
     </div>
+  </div>
+  
+  <div>
+    <a href="#voltarmenu"><img style="width:30px; height: 30px; "src="imagens/seta.png"></a></p>
+  </div>
 
-  </nav>
+  <div>
+    <button type="button" id="btnAumentar">A+</button>
+  </div>
+
+  <div>
+    <button type="button" id="btnDiminuir">A-</button>
+  </div>
+  
+  <div>
+    <input type="checkbox" name="change-theme" id="change-theme" />
+    <label for="change-theme">
+      <i class="bi bi-sun"></i>
+      <i class="bi bi-moon"></i
+    ></label>
+  </div>
 </header>
+
 
 <body id="top">
   <div class="fundo">
@@ -39,6 +70,19 @@
       <div class="line"></div>
     </div>
   </div>
+  
+
+<!-- LIBRAS -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
   <main>
     <article>
 
@@ -58,7 +102,7 @@
             missão é tornar a acessível a todo estudante de biologia uma experiência cheia de aventuras e curiosidades a
             partir do material de parasitologia presente e disponibilizado
             pelo <strong></strong>Laboratório de Biologia do IFRN-Campus Parnamirim</strong>.
-            <br><br>
+            <br><br id="voltarmenu">
             A partir do nosso catálogo, você poderá conhecer amostras labotoriais de vetores, parasitas e tecidos
             infectados.
             As imagens impressionantes que você poderá desfrutar logo abaixo foram capturadas pelos próprios
@@ -1116,25 +1160,22 @@
 
   <footer class="footer has-bg-image" id="rodape">
     <div>
-
-
-
       <div class="footer-bottom">
-        <img src="imagens/logo-ifrn.png">
+        <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
       </div>
-
     </div>
     <div class="footer-bottom">
-      <p class="copyright">
-        Desenvolvido pelas alunas:
-        <b><br>Camile Joice Rocha do Nascimento;
+      <p class="copyright" style="text-align: center;">
+        <strong>Desenvolvido pelas alunas:</strong>
+        <br>Camile Joice Rocha do Nascimento;
           <br> Emine Aissa Franco do Nascimento;
           <br>Maria das Vitórias da Costa Araújo;
           <br> Raissa Laura Plácido Justino.
-          <br></b>
+          <br>
+          <br>
         <strong>Orientador:</strong> Álvaro Hermano da Silva.
         <br>
-        <b>Coorientador(a):</b> Thayse Azevedo da Silva.
+        <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
       </p>
     </div>
 
@@ -1143,8 +1184,29 @@
     <br><br>
   </footer>
 
-
   <script src="script-mv.js"></script>
+  <script type="text/javascript">
+    
+    $(document).ready(function(){
+
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+
+      $('.menu-btn').click(function(){
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility", "hidden");
+      });
+
+      $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible");
+      });
+
+    });
+</script>
+  
 
 </body>
 
