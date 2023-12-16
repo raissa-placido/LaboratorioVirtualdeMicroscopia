@@ -34,9 +34,9 @@ body {
   /* Tamanho mínimo de largura */
   --minHeight: 500px;
   /* Tamanho mínimo de altura */
-  --maxWidth: 200px;
+  --maxWidth: 600px;
   /* Tamanho máximo de largura */
-  --maxHeight: 200px;
+  --maxHeight: 600px;
   /* Tamanho máximo de altura */
 
 
@@ -253,13 +253,13 @@ body {
   }
 
   :root {
-    --minWidth: 800px;
+    --minWidth: 500px;
     /* Tamanho mínimo de largura */
-    --minHeight: 800px;
+    --minHeight: 500px;
     /* Tamanho mínimo de altura */
-    --maxWidth: 1000px;
+    --maxWidth: 600px;
     /* Tamanho máximo de largura */
-    --maxHeight: 1000px;
+    --maxHeight: 600px;
     /* Tamanho máximo de altura */
   
   
@@ -270,21 +270,22 @@ body {
   }
 
   .legenda-imagem {
-    font-size: 30px;
+    font-size: 23px;
     padding: 4%;
-    width: 350px;
-    height: 110px;
-    margin-bottom: 100px;
+    width: 320px;
+    height: 100px;
+    margin-bottom: 20px;
     
     }
 
 
     .texto-ajuda{
-      font-size: 30px;
+      font-size: 23px;
       padding: 2%;
       
-      width: 350px;
-      height: 270px;
+      width: 300px;
+      height: 200px;
+      margin-bottom: 300px;
     
     }
 
@@ -301,12 +302,23 @@ body {
     }
 
     .button-86 {
-      font-size: 35px;
-      width: 90px;
+      font-size: 20px;
+      width: 70px;
       /* Defina o tamanho desejado para o círculo */
-      height: 90px;
+      height: 70px;
       /* Mantenha o mesmo valor que a largura para criar um círculo */
     }
+
+    .menu {
+      display:flex;
+      justify-content:space-between;
+      bottom: 30px;
+      width: 250px;
+      margin-left: 1%;
+      margin-top: 250px;
+    
+    }
+
 }
 
 
@@ -323,8 +335,7 @@ body {
     height: 150px;
     max-height: 130px;
   }
-
-
+ 
     .texto-ajuda{
       font-size: 18px;
       padding: 2%;
